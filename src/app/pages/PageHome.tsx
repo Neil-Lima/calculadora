@@ -3,7 +3,7 @@ import Calculadora from '../components/Calculadora'
 
 export default function PageHome() {
   return (
-    <div>
+    <div style={{marginTop:'50px'}}> 
       <Calculadora/>
     </div>
   )
