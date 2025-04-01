@@ -5,7 +5,7 @@ export const CalculadoraWrapper = styled.div`
   min-width: 300px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 20px 25px 45px;
+  padding: 15px 20px 30px;
   background: radial-gradient(ellipse farthest-corner at 20% 65%, #525864, #130f0e);
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Overpass Mono', monospace;
@@ -53,7 +53,7 @@ export const CalculadoraSunBattery = styled.div`
 
 export const CalculadoraScreenContainer = styled.div`
   position: relative;
-  margin: 20px 0;
+  margin: 15px 0;
   border-radius: 5px;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 `;
@@ -64,8 +64,8 @@ export const CalculadoraScreenMem = styled.p`
   top: 0;
   left: 12px;
   color: #000;
-  font-size: 20px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 16px;
   visibility: hidden;
 `;
 
@@ -76,8 +76,8 @@ export const CalculadoraScreen = styled.input`
   box-sizing: border-box;
   border: 0;
   text-align: right;
-  font-size: 40px;
-  padding: 10px;
+  font-size: 32px;
+  padding: 8px;
   font-family: 'Share Tech Mono', monospace;
   letter-spacing: -2px;
   border-radius: 5px;
@@ -91,31 +91,45 @@ export const CalculadoraScreen = styled.input`
 export const CalculadoraKeyboard = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+<<<<<<< Updated upstream
   grid-template-rows: repeat(2, 30px) repeat(5, 40px);
   gap: 15px;
   
   /* Estilo para o botão 0 ocupar duas colunas */
+=======
+  grid-template-rows: repeat(2, 28px) repeat(5, 32px);
+  gap: 8px;
+  
+  /* Estilo para botão 0 ocupar duas colunas */
+>>>>>>> Stashed changes
   & > button[value="0"] {
     grid-column: span 2;
   }
   
+<<<<<<< Updated upstream
   /* Estilo para o botão de igual (=) */
   & > button:last-child {
     grid-column: span 4;
+=======
+  /* Estilo para o botão de igual (o último botão) ocupar toda a largura */
+  & > button:last-child {
+    grid-column: span 4;
+    height: 32px;
+>>>>>>> Stashed changes
   }
 `;
 
 export const Button = styled.button`
   font-family: inherit;
-  font-size: 30px;
-  border-radius: 7px;
+  font-size: 24px;
+  border-radius: 5px;
   border: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5px;
-  letter-spacing: -2px;
+  padding-top: 3px;
+  letter-spacing: -1px;
   outline: none;
   position: relative;
   background: linear-gradient(25deg, #525a65, #3b424c);
@@ -144,15 +158,15 @@ export const SquareSymbol = styled.svg`
 `;
 
 export const ButtonTypeOperation = styled(Button)`
-  font-size: 36px;
+  font-size: 28px;
 `;
 
 export const ButtonTypeMemory = styled(Button)`
-  font-size: 24px;
+  font-size: 20px;
 `;
 
 export const ButtonTypeAdvanced = styled(Button)`
-  font-size: 24px;
+  font-size: 20px;
 `;
 
 export const ButtonTypeReset = styled(Button)`

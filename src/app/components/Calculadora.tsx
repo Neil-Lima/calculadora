@@ -74,8 +74,11 @@ const Calculadora: React.FC = () => {
             <path d="M12 2l-9 9 9 9M3 11h24" stroke="#fff" strokeWidth="3" />
           </BackspaceSymbol>
         </ButtonTypeOperation>
+<<<<<<< Updated upstream
         
         {/* Segunda linha */}
+=======
+>>>>>>> Stashed changes
         <ButtonTypeMemory>MRC</ButtonTypeMemory>
         <ButtonTypeMemory>M-</ButtonTypeMemory>
         <ButtonTypeMemory>M+</ButtonTypeMemory>
@@ -92,6 +95,7 @@ const Calculadora: React.FC = () => {
         <Button value="1" onClick={() => handleButtonClick('1')}>1</Button>
         <Button value="2" onClick={() => handleButtonClick('2')}>2</Button>
         <Button value="3" onClick={() => handleButtonClick('3')}>3</Button>
+<<<<<<< Updated upstream
         
         {/* Quinta linha */}
         <Button value="0" onClick={() => handleButtonClick('0')}>0</Button>
@@ -104,6 +108,14 @@ const Calculadora: React.FC = () => {
         <ButtonTypeOperation onClick={() => handleButtonClick('+')}>+</ButtonTypeOperation>
         
         {/* Sétima linha */}
+=======
+        <Button value="0" onClick={() => handleButtonClick('0')}>0</Button>
+        <Button value="." onClick={() => handleButtonClick('.')}>.</Button>
+        <ButtonTypeOperation onClick={() => handleButtonClick('/')}>÷</ButtonTypeOperation>
+        <ButtonTypeOperation onClick={() => handleButtonClick('*')}>×</ButtonTypeOperation>
+        <ButtonTypeOperation onClick={() => handleButtonClick('-')}>-</ButtonTypeOperation>
+        <ButtonTypeOperation onClick={() => handleButtonClick('+')}>+</ButtonTypeOperation>
+>>>>>>> Stashed changes
         <ButtonTypeOperation onClick={calculateResult}>=</ButtonTypeOperation>
       </CalculadoraKeyboard>
     </CalculadoraWrapper>

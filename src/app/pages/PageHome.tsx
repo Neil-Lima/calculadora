@@ -1,10 +1,10 @@
 import React from 'react'
-import Calculadora from '../components/Calculadora'
+import Main from '@/components/Main'
 
 export default function PageHome() {
   return (
     <div style={{marginTop:'50px'}}> 
-      <Calculadora/>
+      <Main/>
     </div>
   )
 }
