@@ -91,31 +91,18 @@ export const CalculadoraScreen = styled.input`
 export const CalculadoraKeyboard = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-<<<<<<< Updated upstream
-  grid-template-rows: repeat(2, 30px) repeat(5, 40px);
-  gap: 15px;
-  
-  /* Estilo para o botão 0 ocupar duas colunas */
-=======
   grid-template-rows: repeat(2, 28px) repeat(5, 32px);
   gap: 8px;
   
   /* Estilo para botão 0 ocupar duas colunas */
->>>>>>> Stashed changes
   & > button[value="0"] {
     grid-column: span 2;
   }
   
-<<<<<<< Updated upstream
-  /* Estilo para o botão de igual (=) */
-  & > button:last-child {
-    grid-column: span 4;
-=======
   /* Estilo para o botão de igual (o último botão) ocupar toda a largura */
   & > button:last-child {
     grid-column: span 4;
     height: 32px;
->>>>>>> Stashed changes
   }
 `;
 
