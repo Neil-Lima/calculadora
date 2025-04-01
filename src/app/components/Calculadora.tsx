@@ -65,36 +65,45 @@ const Calculadora: React.FC = () => {
       </CalculadoraScreenContainer>
 
       <CalculadoraKeyboard>
+        {/* Primeira linha */}
         <ButtonTypeReset onClick={clearInputValue}>C</ButtonTypeReset>
-        <ButtonTypeMemory>MRC</ButtonTypeMemory>
-        <ButtonTypeMemory>M-</ButtonTypeMemory>
-        <ButtonTypeMemory>M+</ButtonTypeMemory>
         <ButtonTypeAdvanced>+/-</ButtonTypeAdvanced>
         <ButtonTypeAdvanced>%</ButtonTypeAdvanced>
-        <ButtonTypeAdvanced value="SQUARE">
-          <SquareSymbol viewBox="0 0 33 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 10l5 11h2.5l6-19H33" stroke="#fff" strokeWidth="3" />
-          </SquareSymbol>
-        </ButtonTypeAdvanced>
         <ButtonTypeOperation value="BACKSPACE" onClick={handleBackspace}>
           <BackspaceSymbol viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 2l-9 9 9 9M3 11h24" stroke="#fff" strokeWidth="3" />
           </BackspaceSymbol>
         </ButtonTypeOperation>
+        
+        {/* Segunda linha */}
+        <ButtonTypeMemory>MRC</ButtonTypeMemory>
+        <ButtonTypeMemory>M-</ButtonTypeMemory>
+        <ButtonTypeMemory>M+</ButtonTypeMemory>
         <Button value="7" onClick={() => handleButtonClick('7')}>7</Button>
+        
+        {/* Terceira linha */}
         <Button value="8" onClick={() => handleButtonClick('8')}>8</Button>
         <Button value="9" onClick={() => handleButtonClick('9')}>9</Button>
-        <ButtonTypeOperation onClick={() => handleButtonClick('/')}>÷</ButtonTypeOperation>
         <Button value="4" onClick={() => handleButtonClick('4')}>4</Button>
         <Button value="5" onClick={() => handleButtonClick('5')}>5</Button>
+        
+        {/* Quarta linha */}
         <Button value="6" onClick={() => handleButtonClick('6')}>6</Button>
-        <ButtonTypeOperation onClick={() => handleButtonClick('*')}>×</ButtonTypeOperation>
         <Button value="1" onClick={() => handleButtonClick('1')}>1</Button>
         <Button value="2" onClick={() => handleButtonClick('2')}>2</Button>
         <Button value="3" onClick={() => handleButtonClick('3')}>3</Button>
-        <ButtonTypeOperation onClick={() => handleButtonClick('+')}>+</ButtonTypeOperation>        
+        
+        {/* Quinta linha */}
+        <Button value="0" onClick={() => handleButtonClick('0')}>0</Button>
         <Button value="." onClick={() => handleButtonClick('.')}>.</Button>
-        <Button value="0" onClick={() => handleButtonClick('0')}>0</Button> 
+        <ButtonTypeOperation onClick={() => handleButtonClick('/')}>÷</ButtonTypeOperation>
+        
+        {/* Sexta linha */}
+        <ButtonTypeOperation onClick={() => handleButtonClick('*')}>×</ButtonTypeOperation>
+        <ButtonTypeOperation onClick={() => handleButtonClick('-')}>-</ButtonTypeOperation>
+        <ButtonTypeOperation onClick={() => handleButtonClick('+')}>+</ButtonTypeOperation>
+        
+        {/* Sétima linha */}
         <ButtonTypeOperation onClick={calculateResult}>=</ButtonTypeOperation>
       </CalculadoraKeyboard>
     </CalculadoraWrapper>

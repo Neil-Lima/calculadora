@@ -93,6 +93,16 @@ export const CalculadoraKeyboard = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 30px) repeat(5, 40px);
   gap: 15px;
+  
+  /* Estilo para o botão 0 ocupar duas colunas */
+  & > button[value="0"] {
+    grid-column: span 2;
+  }
+  
+  /* Estilo para o botão de igual (=) */
+  & > button:last-child {
+    grid-column: span 4;
+  }
 `;
 
 export const Button = styled.button`
@@ -115,7 +125,6 @@ export const Button = styled.button`
 
   &:active {
     box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, 0.2), inset -3px 2px 5px 0 rgba(0, 0, 0, 0.2), 3px 1px 1px 0 rgba(0, 0, 0, 0.5), -1px -1px 1px 0 rgba(0, 0, 0, 0.5), 3px -1px 1px 0 rgba(0, 0, 0, 0.5), -1px -1px 5px 0 rgba(0, 0, 0, 0.5), 4px 0 1px 0 rgba(255, 255, 255, 0.3);
-
     transform: translate(1px, -1px);
   }
 
