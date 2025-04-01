@@ -6,19 +6,19 @@ export const ButtonTypeReset = styled(Button)`
 `;
 
 export const ButtonTypeAdvanced = styled(Button)`
-  font-size: 24px;
+  font-size: 18px;
 `;
 
 export const ButtonTypeOperation = styled(Button)`
-  font-size: 36px;
+  font-size: 24px;
 `;
 
 export const SquareSymbol = styled.svg`
-  width: 31px;
-  height: 19px;
+  width: 24px;
+  height: 16px;
 `;
 
 export const BackspaceSymbol = styled.svg`
-  width: 24px;
-  height: 18px;
+  width: 20px;
+  height: 15px;
 `; 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const DisplayContainer = styled.div`
   position: relative;
-  margin: 20px 0;
+  margin: 12px 0;
   border-radius: 5px;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 `;
@@ -11,10 +11,10 @@ export const DisplayScreenMem = styled.p`
   font-family: 'Share Tech Mono', monospace;
   position: absolute;
   top: 0;
-  left: 12px;
+  left: 10px;
   color: #000;
-  font-size: 20px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 14px;
 `;
 
 export const DisplayScreen = styled.input`
@@ -24,8 +24,8 @@ export const DisplayScreen = styled.input`
   box-sizing: border-box;
   border: 0;
   text-align: right;
-  font-size: 40px;
-  padding: 10px;
+  font-size: 32px;
+  padding: 8px;
   font-family: 'Share Tech Mono', monospace;
   letter-spacing: -2px;
   border-radius: 5px;

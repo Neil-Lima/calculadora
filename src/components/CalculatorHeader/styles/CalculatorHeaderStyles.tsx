@@ -13,12 +13,12 @@ export const CalculadoraHeading = styled.div`
 
 export const CalculadoraTitle = styled.h1`
   margin: 0 0 -4px;
-  font-size: 25px;
+  font-size: 20px;
 `;
 
 export const CalculadoraSubtitle = styled.h2`
   margin: 0;
-  font-size: 18px;
+  font-size: 14px;
 `;
 
 export const CalculadoraSunBatteryContainer = styled.div`
@@ -27,10 +27,10 @@ export const CalculadoraSunBatteryContainer = styled.div`
 `;
 
 export const CalculadoraSunBattery = styled.div`
-  width: 107px;
-  height: 30px;
+  width: 80px;
+  height: 25px;
   border-radius: 3px;
   background-color: #3d2115;
   box-shadow: 0 -3px 5px -3px rgba(255, 255, 255, 0.2), 5px 0 3px -5px rgba(255, 255, 255, 0.8), 0 2px 5px -2px rgba(0, 0, 0, 0.5), -3px 0 3px -1px rgba(0, 0, 0, 0.8), inset 0 -5px 3px -3px rgba(0, 0, 0, 0.5), inset 5px 0 5px -2px rgba(0, 0, 0, 0.8);
-  background-image: repeating-linear-gradient(to right, transparent, transparent 26px, rgba(255, 255, 255, 0.1) 26px, rgba(255, 255, 255, 0.1) 27px);
+  background-image: repeating-linear-gradient(to right, transparent, transparent 19px, rgba(255, 255, 255, 0.1) 19px, rgba(255, 255, 255, 0.1) 20px);
 `; 

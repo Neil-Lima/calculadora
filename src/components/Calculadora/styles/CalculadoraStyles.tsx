@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const CalculadoraWrapper = styled.div`
-  width: 300px;
-  min-width: 300px;
+  width: 230px;
+  min-width: 230px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 20px 25px 45px;
+  padding: 15px 20px 35px;
   background: radial-gradient(ellipse farthest-corner at 20% 65%, #525864, #130f0e);
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Overpass Mono', monospace;

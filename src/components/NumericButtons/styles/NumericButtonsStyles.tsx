@@ -2,15 +2,15 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   font-family: inherit;
-  font-size: 30px;
+  font-size: 22px;
   border-radius: 7px;
   border: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5px;
-  letter-spacing: -2px;
+  padding-top: 3px;
+  letter-spacing: -1px;
   outline: none;
   position: relative;
   background: linear-gradient(25deg, #525a65, #3b424c);
