@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const CalculadoraWrapper = styled.div`
-  width: 300px;
-  min-width: 300px;
+  width: 250px;
+  min-width: 250px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 15px 20px 30px;
+  padding: 12px 15px 20px;
   background: radial-gradient(ellipse farthest-corner at 20% 65%, #525864, #130f0e);
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Overpass Mono', monospace;
@@ -29,12 +29,12 @@ export const CalculadoraHeading = styled.div`
 
 export const CalculadoraTitle = styled.h1`
   margin: 0 0 -4px;
-  font-size: 25px;
+  font-size: 20px;
 `;
 
 export const CalculadoraSubtitle = styled.h2`
   margin: 0;
-  font-size: 18px;
+  font-size: 14px;
 `;
 
 export const CalculadoraSunBatteryContainer = styled.div`
@@ -43,8 +43,8 @@ export const CalculadoraSunBatteryContainer = styled.div`
 `;
 
 export const CalculadoraSunBattery = styled.div`
-  width: 107px;
-  height: 30px;
+  width: 80px;
+  height: 20px;
   border-radius: 3px;
   background-color: #3d2115;
   box-shadow: 0 -3px 5px -3px rgba(255, 255, 255, 0.2), 5px 0 3px -5px rgba(255, 255, 255, 0.8), 0 2px 5px -2px rgba(0, 0, 0, 0.5), -3px 0 3px -1px rgba(0, 0, 0, 0.8), inset 0 -5px 3px -3px rgba(0, 0, 0, 0.5), inset 5px 0 5px -2px rgba(0, 0, 0, 0.8);
@@ -53,7 +53,7 @@ export const CalculadoraSunBattery = styled.div`
 
 export const CalculadoraScreenContainer = styled.div`
   position: relative;
-  margin: 15px 0;
+  margin: 12px 0;
   border-radius: 5px;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 `;
@@ -64,8 +64,8 @@ export const CalculadoraScreenMem = styled.p`
   top: 0;
   left: 12px;
   color: #000;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 14px;
   visibility: hidden;
 `;
 
@@ -76,7 +76,7 @@ export const CalculadoraScreen = styled.input`
   box-sizing: border-box;
   border: 0;
   text-align: right;
-  font-size: 32px;
+  font-size: 24px;
   padding: 8px;
   font-family: 'Share Tech Mono', monospace;
   letter-spacing: -2px;
@@ -91,8 +91,8 @@ export const CalculadoraScreen = styled.input`
 export const CalculadoraKeyboard = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 28px) repeat(5, 32px);
-  gap: 8px;
+  grid-template-rows: repeat(2, 22px) repeat(5, 25px);
+  gap: 5px;
   
   /* Estilo para botão 0 ocupar duas colunas */
   & > button[value="0"] {
@@ -102,35 +102,35 @@ export const CalculadoraKeyboard = styled.div`
   /* Estilo para o botão de igual (o último botão) ocupar toda a largura */
   & > button:last-child {
     grid-column: span 4;
-    height: 32px;
+    height: 25px;
   }
 `;
 
 export const Button = styled.button`
   font-family: inherit;
-  font-size: 24px;
+  font-size: 18px;
   border-radius: 5px;
   border: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 3px;
+  padding-top: 2px;
   letter-spacing: -1px;
   outline: none;
   position: relative;
   background: linear-gradient(25deg, #525a65, #3b424c);
   color: rgba(255, 255, 255, 0.8);
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
-  box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, 0.2), inset -3px 2px 5px 0 rgba(0, 0, 0, 0.2), 4px 1px 1px 0 rgba(0, 0, 0, 0.5), -1px -3px 1px 0 rgba(0, 0, 0, 0.5), 4px -3px 1px 0 rgba(0, 0, 0, 0.5), -1px -1px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, 0.2), inset -3px 2px 5px 0 rgba(0, 0, 0, 0.2), 2px 1px 1px 0 rgba(0, 0, 0, 0.5), -1px -2px 1px 0 rgba(0, 0, 0, 0.5), 2px -2px 1px 0 rgba(0, 0, 0, 0.5), -1px -1px 3px 0 rgba(0, 0, 0, 0.5);
 
   &:active {
-    box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, 0.2), inset -3px 2px 5px 0 rgba(0, 0, 0, 0.2), 3px 1px 1px 0 rgba(0, 0, 0, 0.5), -1px -1px 1px 0 rgba(0, 0, 0, 0.5), 3px -1px 1px 0 rgba(0, 0, 0, 0.5), -1px -1px 5px 0 rgba(0, 0, 0, 0.5), 4px 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, 0.2), inset -3px 2px 5px 0 rgba(0, 0, 0, 0.2), 1px 1px 1px 0 rgba(0, 0, 0, 0.5), -1px -1px 1px 0 rgba(0, 0, 0, 0.5), 1px -1px 1px 0 rgba(0, 0, 0, 0.5), -1px -1px 3px 0 rgba(0, 0, 0, 0.5), 2px 0 1px 0 rgba(255, 255, 255, 0.3);
     transform: translate(1px, -1px);
   }
-
+  
   &[value="NEGATE"] {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   &[value="SQUARE"],
@@ -140,20 +140,20 @@ export const Button = styled.button`
 `;
 
 export const SquareSymbol = styled.svg`
-  width: 31px;
-  height: 19px;
+  width: 20px;
+  height: 15px;
 `;
 
 export const ButtonTypeOperation = styled(Button)`
-  font-size: 28px;
+  font-size: 18px;
 `;
 
 export const ButtonTypeMemory = styled(Button)`
-  font-size: 20px;
+  font-size: 14px;
 `;
 
 export const ButtonTypeAdvanced = styled(Button)`
-  font-size: 20px;
+  font-size: 14px;
 `;
 
 export const ButtonTypeReset = styled(Button)`
@@ -161,6 +161,6 @@ export const ButtonTypeReset = styled(Button)`
 `;
 
 export const BackspaceSymbol = styled.svg`
-  width: 24px;
-  height: 18px;
+  width: 15px;
+  height: 12px;
 `;

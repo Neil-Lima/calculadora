@@ -15,7 +15,6 @@ import {
   ButtonTypeMemory,
   ButtonTypeAdvanced,
   ButtonTypeOperation,
-  SquareSymbol,
   BackspaceSymbol,
   Button
 } from '../styles/CalculadoraStyle';
@@ -65,7 +64,7 @@ const Calculadora: React.FC = () => {
       </CalculadoraScreenContainer>
 
       <CalculadoraKeyboard>
-        {/* Primeira linha */}
+        {/* Linha 1: C, +/-, %, ← */}
         <ButtonTypeReset onClick={clearInputValue}>C</ButtonTypeReset>
         <ButtonTypeAdvanced>+/-</ButtonTypeAdvanced>
         <ButtonTypeAdvanced>%</ButtonTypeAdvanced>
@@ -75,28 +74,35 @@ const Calculadora: React.FC = () => {
           </BackspaceSymbol>
         </ButtonTypeOperation>
         
+        {/* Linha 2: MRC, M-, M+, 7 */}
         <ButtonTypeMemory>MRC</ButtonTypeMemory>
         <ButtonTypeMemory>M-</ButtonTypeMemory>
         <ButtonTypeMemory>M+</ButtonTypeMemory>
         <Button value="7" onClick={() => handleButtonClick('7')}>7</Button>
         
+        {/* Linha 3: 8, 9, 4, 5 */}
         <Button value="8" onClick={() => handleButtonClick('8')}>8</Button>
         <Button value="9" onClick={() => handleButtonClick('9')}>9</Button>
         <Button value="4" onClick={() => handleButtonClick('4')}>4</Button>
         <Button value="5" onClick={() => handleButtonClick('5')}>5</Button>
         
+        {/* Linha 4: 6, 1, 2, 3 */}
         <Button value="6" onClick={() => handleButtonClick('6')}>6</Button>
         <Button value="1" onClick={() => handleButtonClick('1')}>1</Button>
         <Button value="2" onClick={() => handleButtonClick('2')}>2</Button>
         <Button value="3" onClick={() => handleButtonClick('3')}>3</Button>
         
+        {/* Linha 5: 0, ., ÷ */}
         <Button value="0" onClick={() => handleButtonClick('0')}>0</Button>
         <Button value="." onClick={() => handleButtonClick('.')}>.</Button>
         <ButtonTypeOperation onClick={() => handleButtonClick('/')}>÷</ButtonTypeOperation>
-        <ButtonTypeOperation onClick={() => handleButtonClick('*')}>×</ButtonTypeOperation>
         
+        {/* Linha 6: ×, -, +*/}
+        <ButtonTypeOperation onClick={() => handleButtonClick('*')}>×</ButtonTypeOperation>
         <ButtonTypeOperation onClick={() => handleButtonClick('-')}>-</ButtonTypeOperation>
         <ButtonTypeOperation onClick={() => handleButtonClick('+')}>+</ButtonTypeOperation>
+        
+        {/* Linha 7: = */}
         <ButtonTypeOperation onClick={calculateResult}>=</ButtonTypeOperation>
       </CalculadoraKeyboard>
     </CalculadoraWrapper>
