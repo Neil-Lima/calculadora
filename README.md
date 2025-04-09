@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧮 Calculadora Avançada com Next.js e Redux
 
-## Getting Started
+<div align="center">
+  <img src="public/calculator.png" alt="Calculadora Logo" width="200" />
+</div>
 
-First, run the development server:
+## 📋 Sobre o Projeto
+
+Desenvolvi esta calculadora moderna como uma aplicação web que oferece funcionalidades avançadas além das operações básicas. Construída com Next.js, TypeScript e Redux, esta calculadora apresenta uma interface intuitiva e responsiva que funciona perfeitamente em qualquer dispositivo.
+
+### ✨ Recursos Principais
+
+- **Operações Básicas**: Adição, subtração, multiplicação e divisão
+- **Funções Avançadas**: Porcentagem, raiz quadrada, potenciação
+- **Gerenciamento de Memória**: Funções MRC, M+, M- para armazenar e recuperar valores
+- **Histórico de Cálculos**: Visualização dos cálculos anteriores
+- **Interface Responsiva**: Design adaptável a qualquer tamanho de tela
+- **Tema Escuro/Claro**: Alternância de temas para preferência visual
+- **Feedback Visual**: Animações suaves durante a interação
+
+## 🚀 Tecnologias Utilizadas
+
+<div style="display: inline-block">
+  <img align="center" alt="Next.js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/master/icons/nextjs/nextjs-original.svg">
+  <img align="center" alt="React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+  <img align="center" alt="TypeScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+  <img align="center" alt="Redux" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg">
+  <img align="center" alt="Tailwind CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg">
+  <img align="center" alt="Bootstrap" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg">
+</div>
+
+- **Next.js**: Framework React para renderização e otimização
+- **TypeScript**: Tipagem estática para código mais robusto
+- **Redux**: Gerenciamento de estado global
+- **Styled Components**: Estilização baseada em componentes
+- **Tailwind CSS**: Framework utilitário para estilização rápida
+- **React Bootstrap**: Componentes de UI pré-estilizados
+
+## 🔧 Instalação e Configuração
 
 ```bash
+# Clone o repositório
+git clone https://github.com/Neil-Lima/calculadora.git
+cd calculadora
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação estará disponível em `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Arquitetura
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+O projeto segue uma arquitetura moderna de aplicação web:
 
-## Learn More
+- **Estrutura de Componentes**:
+  - Componentes modulares para cada parte da calculadora
+  - Separação clara de responsabilidades
 
-To learn more about Next.js, take a look at the following resources:
+- **Gerenciamento de Estado**:
+  - Redux para gerenciar o estado global
+  - Reducers para manipular operações matemáticas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Estilização**:
+  - Combinação de Styled Components e Tailwind CSS
+  - Design responsivo e adaptável
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Padrões de Projeto**:
+  - Arquitetura baseada em componentes
+  - Hooks personalizados para lógica reutilizável
+  - Testes automatizados para garantir funcionalidade
 
-## Deploy on Vercel
+## 📱 Funcionalidades Detalhadas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Operações Matemáticas
+- Suporte para operações básicas (adição, subtração, multiplicação, divisão)
+- Cálculos percentuais
+- Operações com números negativos
+- Expressões matemáticas complexas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Interface do Usuário
+- Layout inspirado em calculadoras físicas para familiaridade
+- Feedback visual para cada interação
+- Animações suaves para melhor experiência
+
+### Recursos Adicionais
+- Histórico de cálculos para referência
+- Funções de memória (MRC, M+, M-)
+- Teclas de atalho para operações rápidas
+
+## 📞 Contato
+
+- **Email**: victorneil08@gmail.com
+- **LinkedIn**: [Neil Lima](https://www.linkedin.com/in/neil-lima-706606248)
+- **GitHub**: [Neil-Lima](https://github.com/Neil-Lima)
+
+---
+
+🧮 Desenvolvido com ❤️ por Victor Lima
